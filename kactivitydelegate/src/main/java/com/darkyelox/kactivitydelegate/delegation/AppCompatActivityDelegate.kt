@@ -53,6 +53,54 @@ interface AppCompatActivityDelegate4 : ActivityDelegate {
     var delegate4: AppCompatActivityDelegation
 }
 
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate5 : ActivityDelegate {
+    var delegate5: AppCompatActivityDelegation
+}
+
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate6 : ActivityDelegate {
+    var delegate6: AppCompatActivityDelegation
+}
+
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate7 : ActivityDelegate {
+    var delegate7: AppCompatActivityDelegation
+}
+
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate8 : ActivityDelegate {
+    var delegate8: AppCompatActivityDelegation
+}
+
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate9 : ActivityDelegate {
+    var delegate9: AppCompatActivityDelegation
+}
+
+/**
+ * Delegate interface for [AppCompatActivity] classes
+ */
+@Suppress("UNUSED")
+interface AppCompatActivityDelegate10 : ActivityDelegate {
+    var delegate10: AppCompatActivityDelegation
+}
+
 
 /**
  * Implementations of [AppCompatActivityDelegate1], this ensures not to override the variables of the interface
@@ -146,6 +194,150 @@ abstract class AppCompatActivityDelegateImpl4 : AppCompatActivityDelegate4 {
 
     val delegate by lazy {
         delegate4
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate5], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl5 : AppCompatActivityDelegate5 {
+    override lateinit var delegate5: AppCompatActivityDelegation
+
+    init {
+        delegate5 = delegate()
+    }
+
+    val activity by lazy {
+        delegate5.activity
+    }
+
+    val delegate by lazy {
+        delegate5
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate6], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl6 : AppCompatActivityDelegate6 {
+    override lateinit var delegate6: AppCompatActivityDelegation
+
+    init {
+        delegate6 = delegate()
+    }
+
+    val activity by lazy {
+        delegate6.activity
+    }
+
+    val delegate by lazy {
+        delegate6
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate7], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl7 : AppCompatActivityDelegate7 {
+    override lateinit var delegate7: AppCompatActivityDelegation
+
+    init {
+        delegate7 = delegate()
+    }
+
+    val activity by lazy {
+        delegate7.activity
+    }
+
+    val delegate by lazy {
+        delegate7
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate8], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl8 : AppCompatActivityDelegate8 {
+    override lateinit var delegate8: AppCompatActivityDelegation
+
+    init {
+        delegate8 = delegate()
+    }
+
+    val activity by lazy {
+        delegate8.activity
+    }
+
+    val delegate by lazy {
+        delegate8
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate9], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl9 : AppCompatActivityDelegate9 {
+    override lateinit var delegate9: AppCompatActivityDelegation
+
+    init {
+        delegate9 = delegate()
+    }
+
+    val activity by lazy {
+        delegate9.activity
+    }
+
+    val delegate by lazy {
+        delegate9
+    }
+
+    abstract fun delegate(): AppCompatActivityDelegation
+}
+
+/**
+ * Implementations of [AppCompatActivityDelegate10], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ */
+@Suppress("UNUSED")
+abstract class AppCompatActivityDelegateImpl10 : AppCompatActivityDelegate10 {
+    override lateinit var delegate10: AppCompatActivityDelegation
+
+    init {
+        delegate10 = delegate()
+    }
+
+    val activity by lazy {
+        delegate10.activity
+    }
+
+    val delegate by lazy {
+        delegate10
     }
 
     abstract fun delegate(): AppCompatActivityDelegation
