@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test for KActivityDelegate</string>
+
+    <string name="original_example_text">Original example text</string>
+
+    <string name="some_action_button_off_label">Start Some Action</string>
+    <string name="some_action_button_on_label">Stop Some Action</string>
+    <string name="other_action_button_off_label">Start Other Action</string>
+    <string name="other_action_button_on_label">Stop Other Action</string>
+</resources>
