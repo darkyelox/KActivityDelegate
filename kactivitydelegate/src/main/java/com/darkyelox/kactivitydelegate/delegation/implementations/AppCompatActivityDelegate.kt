@@ -1,6 +1,6 @@
 @file:Suppress("LeakingThis")
 
-package com.darkyelox.kactivitydelegate.delegation
+package com.darkyelox.kactivitydelegate.delegation.implementations
 
 import android.app.Fragment
 import android.content.Intent
@@ -10,9 +10,9 @@ import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.support.v7.app.AppCompatActivity
 import android.view.ActionMode
-import com.darkyelox.kactivitydelegate.ActivityDelegate
 import com.darkyelox.kactivitydelegate.AppCompatActivityDelegation
 import com.darkyelox.kactivitydelegate.DelegatedActivityInterface
+import com.darkyelox.kactivitydelegate.delegation.definitions.*
 import com.darkyelox.kactivitydelegate.extensions.*
 
 /**
@@ -20,87 +20,6 @@ import com.darkyelox.kactivitydelegate.extensions.*
  *
  * @author diego
  */
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate1 : ActivityDelegate {
-    var delegate1: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate2 : ActivityDelegate {
-    var delegate2: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate3 : ActivityDelegate {
-    var delegate3: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate4 : ActivityDelegate {
-    var delegate4: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate5 : ActivityDelegate {
-    var delegate5: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate6 : ActivityDelegate {
-    var delegate6: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate7 : ActivityDelegate {
-    var delegate7: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate8 : ActivityDelegate {
-    var delegate8: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate9 : ActivityDelegate {
-    var delegate9: AppCompatActivityDelegation
-}
-
-/**
- * Delegate interface for [AppCompatActivity] classes
- */
-@Suppress("UNUSED")
-interface AppCompatActivityDelegate10 : ActivityDelegate {
-    var delegate10: AppCompatActivityDelegation
-}
-
 
 /**
  * Implementations of [AppCompatActivityDelegate1], this ensures not to override the variables of the interface

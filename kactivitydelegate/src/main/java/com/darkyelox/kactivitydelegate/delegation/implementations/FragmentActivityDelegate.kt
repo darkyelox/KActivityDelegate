@@ -1,6 +1,6 @@
 @file:Suppress("LeakingThis")
 
-package com.darkyelox.kactivitydelegate.delegation
+package com.darkyelox.kactivitydelegate.delegation.implementations
 
 import android.app.Fragment
 import android.content.Intent
@@ -10,10 +10,9 @@ import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.support.v4.app.FragmentActivity
 import android.view.ActionMode
-import com.darkyelox.kactivitydelegate.ActivityDelegate
-import com.darkyelox.kactivitydelegate.ActivityDelegateImpl
 import com.darkyelox.kactivitydelegate.DelegatedActivityInterface
 import com.darkyelox.kactivitydelegate.FragmentActivityDelegation
+import com.darkyelox.kactivitydelegate.delegation.definitions.*
 import com.darkyelox.kactivitydelegate.extensions.*
 
 /**
@@ -21,38 +20,6 @@ import com.darkyelox.kactivitydelegate.extensions.*
  * 
  * @author diego
  */
-
-/**
- * Delegate interface for [FragmentActivity] classes
- */
-@Suppress("UNUSED")
-interface FragmentActivityDelegate1 : ActivityDelegate {
-    var delegate1: ActivityDelegateImpl<FragmentActivity>
-}
-
-/**
- * Delegate interface for [FragmentActivity] classes
- */
-@Suppress("UNUSED")
-interface FragmentActivityDelegate2 : ActivityDelegate {
-    var delegate2: ActivityDelegateImpl<FragmentActivity>
-}
-
-/**
- * Delegate interface for [FragmentActivity] classes
- */
-@Suppress("UNUSED")
-interface FragmentActivityDelegate3 : ActivityDelegate {
-    var delegate3: ActivityDelegateImpl<FragmentActivity>
-}
-
-/**
- * Delegate interface for [FragmentActivity] classes
- */
-@Suppress("UNUSED")
-interface FragmentActivityDelegate4 : ActivityDelegate {
-    var delegate4: ActivityDelegateImpl<FragmentActivity>
-}
 
 /**
  * Implementations of [FragmentActivityDelegate1], this ensures not to override the variables of the interface
@@ -151,6 +118,157 @@ abstract class FragmentActivityDelegateImpl4 : FragmentActivityDelegate4 {
 
     abstract fun delegate(): FragmentActivityDelegation
 }
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl5 : FragmentActivityDelegate5 {
+    override lateinit var delegate5: FragmentActivityDelegation
+
+    init {
+        delegate5 = delegate()
+    }
+
+    val activity by lazy {
+        delegate5.activity
+    }
+
+    val delegate by lazy {
+        delegate5
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl6 : FragmentActivityDelegate6 {
+    override lateinit var delegate6: FragmentActivityDelegation
+
+    init {
+        delegate6 = delegate()
+    }
+
+    val activity by lazy {
+        delegate6.activity
+    }
+
+    val delegate by lazy {
+        delegate6
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl7 : FragmentActivityDelegate7 {
+    override lateinit var delegate7: FragmentActivityDelegation
+
+    init {
+        delegate7 = delegate()
+    }
+
+    val activity by lazy {
+        delegate7.activity
+    }
+
+    val delegate by lazy {
+        delegate7
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl8 : FragmentActivityDelegate8 {
+    override lateinit var delegate8: FragmentActivityDelegation
+
+    init {
+        delegate8 = delegate()
+    }
+
+    val activity by lazy {
+        delegate8.activity
+    }
+
+    val delegate by lazy {
+        delegate8
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl9 : FragmentActivityDelegate9 {
+    override lateinit var delegate9: FragmentActivityDelegation
+
+    init {
+        delegate9 = delegate()
+    }
+
+    val activity by lazy {
+        delegate9.activity
+    }
+
+    val delegate by lazy {
+        delegate9
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
+/**
+ * Implementations of [FragmentActivityDelegate3], this ensures not to override the variables of the interface
+ * in each inherited class, also brings a common [activity] and [delegate] properties for access
+ * the original activity and delegate.
+ *
+ */
+@Suppress("UNUSED")
+abstract class FragmentActivityDelegateImpl10 : FragmentActivityDelegate10 {
+    override lateinit var delegate10: FragmentActivityDelegation
+
+    init {
+        delegate10 = delegate()
+    }
+
+    val activity by lazy {
+        delegate10.activity
+    }
+
+    val delegate by lazy {
+        delegate10
+    }
+
+    abstract fun delegate(): FragmentActivityDelegation
+}
+
 
 abstract class DelegatedFragmentActivity: FragmentActivity(), DelegatedActivityInterface<FragmentActivity> {
     override var onCreateCallback: () -> Unit = {}

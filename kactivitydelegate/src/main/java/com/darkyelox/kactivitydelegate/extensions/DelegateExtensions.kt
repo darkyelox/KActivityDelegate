@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.ActionMode
 import com.darkyelox.kactivitydelegate.ActivityDelegate
 import com.darkyelox.kactivitydelegate.DelegatedActivityInterface
-import com.darkyelox.kactivitydelegate.delegation.*
+import com.darkyelox.kactivitydelegate.delegation.definitions.*
 
 /**
  * Created by diego on 1/11/17.
@@ -18,17 +18,10 @@ import com.darkyelox.kactivitydelegate.delegation.*
  */
 
 private inline fun <reified T : ActivityDelegate> delegateCaller(inter: DelegatedActivityInterface<*>, toCall: (type: T) -> Unit) {
-    // try {
-        if (inter is T)
-            with(inter as T) {
-                toCall(inter)
-            }
-    /*} catch (e: Exception) {
-        if (e !is ClassCastException) {
-            e.printStackTrace()
-            throw e
+    if (inter is T)
+        with(inter as T) {
+            toCall(inter)
         }
-    }*/
 }
 
 /**

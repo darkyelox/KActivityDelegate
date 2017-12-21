@@ -4,7 +4,7 @@ import android.graphics.Color
 import android.support.constraint.ConstraintLayout
 import android.util.Log
 import com.darkyelox.kactivitydelegate.AppCompatActivityDelegation
-import com.darkyelox.kactivitydelegate.delegation.AppCompatActivityDelegateImpl1
+import com.darkyelox.kactivitydelegate.delegation.implementations.AppCompatActivityDelegateImpl1
 import com.darkyelox.kactivitydelegatexample.definitions.SomeActivityDelegate
 import com.darkyelox.kactivitydelegate.ActivityDelegateImpl
 import com.darkyelox.kactivitydelegatexample.R

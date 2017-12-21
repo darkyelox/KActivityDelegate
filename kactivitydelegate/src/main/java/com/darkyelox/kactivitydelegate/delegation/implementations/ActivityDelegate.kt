@@ -1,6 +1,6 @@
 @file:Suppress("LeakingThis")
 
-package com.darkyelox.kactivitydelegate.delegation
+package com.darkyelox.kactivitydelegate.delegation.implementations
 
 import android.app.Activity
 import android.app.Fragment
@@ -10,99 +10,16 @@ import android.databinding.ViewDataBinding
 import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.view.ActionMode
-import com.darkyelox.kactivitydelegate.ActivityDelegate
-import com.darkyelox.kactivitydelegate.ActivityDelegateImpl
 import com.darkyelox.kactivitydelegate.ActivityDelegation
 import com.darkyelox.kactivitydelegate.DelegatedActivityInterface
+import com.darkyelox.kactivitydelegate.delegation.definitions.*
 import com.darkyelox.kactivitydelegate.extensions.*
 
 /**
  * Created by diego on 30/10/17.
  *
  * @author diego
- *
- * TODO: make a library of this.
  */
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate1 : ActivityDelegate {
-    var delegate1: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate2 : ActivityDelegate {
-    var delegate2: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate3 : ActivityDelegate {
-    var delegate3: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate4 : ActivityDelegate {
-    var delegate4: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate5 : ActivityDelegate {
-    var delegate5: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate6 : ActivityDelegate {
-    var delegate6: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate7 : ActivityDelegate {
-    var delegate7: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate8 : ActivityDelegate {
-    var delegate8: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate9 : ActivityDelegate {
-    var delegate9: ActivityDelegateImpl<Activity>
-}
-
-/**
- * Delegate interface for [Activity] classes
- */
-@Suppress("UNUSED")
-interface ActivityDelegate10 : ActivityDelegate {
-    var delegate10: ActivityDelegateImpl<Activity>
-}
 
 /**
  * Implementations of [ActivityDelegate1], this ensures not to override the variables of the interface

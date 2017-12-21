@@ -2,7 +2,7 @@ package com.darkyelox.kactivitydelegatexample
 
 import android.os.Bundle
 import android.widget.ToggleButton
-import com.darkyelox.kactivitydelegate.delegation.DelegatedAppCompatActivity
+import com.darkyelox.kactivitydelegate.delegation.implementations.DelegatedAppCompatActivity
 import com.darkyelox.kactivitydelegatexample.definitions.OtherActivityDelegate
 import com.darkyelox.kactivitydelegatexample.definitions.SomeActivityDelegate
 import com.darkyelox.kactivitydelegatexample.implementations.OtherActivityDelegateImpl

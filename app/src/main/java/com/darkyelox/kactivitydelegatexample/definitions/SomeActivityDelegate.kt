@@ -1,6 +1,6 @@
 package com.darkyelox.kactivitydelegatexample.definitions
 
-import com.darkyelox.kactivitydelegate.delegation.AppCompatActivityDelegate1
+import com.darkyelox.kactivitydelegate.delegation.definitions.AppCompatActivityDelegate1
 
 /**
  * Created by diego on 19/12/17.

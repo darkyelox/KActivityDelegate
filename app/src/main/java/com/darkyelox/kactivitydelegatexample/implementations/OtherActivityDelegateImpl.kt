@@ -1,13 +1,11 @@
 package com.darkyelox.kactivitydelegatexample.implementations
 
 import android.annotation.SuppressLint
-import android.graphics.Color
-import android.support.constraint.ConstraintLayout
 import android.util.Log
 import android.widget.TextView
 import com.darkyelox.kactivitydelegate.ActivityDelegateImpl
 import com.darkyelox.kactivitydelegate.AppCompatActivityDelegation
-import com.darkyelox.kactivitydelegate.delegation.AppCompatActivityDelegateImpl2
+import com.darkyelox.kactivitydelegate.delegation.implementations.AppCompatActivityDelegateImpl2
 import com.darkyelox.kactivitydelegatexample.R
 import com.darkyelox.kactivitydelegatexample.definitions.OtherActivityDelegate
 
