@@ -192,19 +192,7 @@ Any PR are welcome, any suggestion are wellcome, this is a simple library for An
 ## About me
 
 Hi i'm Diego, entuciast Android and Web developer, if you want to contact me you can through
-<style>
-.social-icon{
-    
-}
 
-.social-icon-wrapper {
-    margin-left:15px;
-}
-
-.social-icon-wrapper .social-icon{
-    margin-left: 0px;
-}
-</style>
 <a href="https://www.linkedin.com/in/novashen/">
 <div class="social-icon" style="display: inline-block;
     width:48px; 
