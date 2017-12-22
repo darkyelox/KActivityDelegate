@@ -184,3 +184,56 @@ At this time we can use a max up to 10 delegations per Activity, i think is an a
 >Remember, there are delegations for `AppCompatActivity`, `FragmentActivity` and `Activity` classes for example there is an `FragmentActivityDelegate5` and `FragmentActivityDelegateImpl5` and so on
 
 >Remember, you can access the target activity using the property `activity` from the implementation class
+
+## Contribute
+
+Any PR are welcome, any suggestion are wellcome, this is a simple library for Android development using kotlin, if you think any piece of code can be improved or you want to have more functionalities use the issues section.
+
+## About me
+
+Hi i'm Diego, entuciast Android and Web developer, if you want to contact me you can through
+<style>
+.social-icon{
+    display: inline-block;
+    width:48px; 
+    height:48px;
+    margin-left: 15px;
+}
+
+.social-icon-wrapper {
+    margin-left:15px;
+}
+
+.social-icon-wrapper .social-icon{
+    margin-left: 0px;
+}
+</style>
+<a href="https://www.linkedin.com/in/novashen/">
+<div class="social-icon" style="background-color: #0077B5;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+</a>
+<a href="https://www.facebook.com/dmurillovalencia">
+<div class="social-icon" style="background-color: #3B5998;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+</a>
+
+<a href="mailto:dfmv124@gmail.com">
+<div class="social-icon-wrapper" style="display: inline-block; width:48px; height:45px; background: white no-repeat fixed center center;border-radius:10px;">
+    <div class="social-icon" style="background-color: #D14836;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+</div>
+</a>
+
+
+
+
+    Copyright 2017 Diego Fernando Murillo Valencia
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
