@@ -262,6 +262,9 @@ abstract class AppCompatActivityDelegateImpl10 : AppCompatActivityDelegate10 {
     abstract fun delegate(): AppCompatActivityDelegation
 }
 
+/**
+ * Delegated AppCompatActivity with the logic for initialize the delegations
+ */
 abstract class DelegatedAppCompatActivity: AppCompatActivity(), DelegatedActivityInterface<AppCompatActivity> {
     override var onCreateCallback: () -> Unit = {}
 
@@ -333,11 +336,18 @@ abstract class DelegatedAppCompatActivity: AppCompatActivity(), DelegatedActivit
         onActivityReenterDelegate(resultCode, data)
     }
 
+
+    /**
+     * Calls the [onCreateCallback] method for execute the user logic in the onCreate method
+     */
     override fun setContentView(@LayoutRes layoutId: Int) {
         super.setContentView(layoutId)
         onCreateCallback()
     }
 
+    /**
+     * helper method for use this AppCompatActivity with data binding
+     */
     override fun <T : ViewDataBinding> setContentViewDataBinding(layoutId: Int): T {
         return DataBindingUtil.setContentView(this, layoutId)
     }

@@ -17,6 +17,10 @@ import com.darkyelox.kactivitydelegate.delegation.definitions.*
  * @author diego
  */
 
+/**
+ * Helper function for execute the delegation implementation in the activity it simples checks if
+ * the activity extends to some [ActivityDelegate] type and call the code of [toCall]
+ */
 private inline fun <reified T : ActivityDelegate> delegateCaller(inter: DelegatedActivityInterface<*>, toCall: (type: T) -> Unit) {
     if (inter is T)
         with(inter as T) {

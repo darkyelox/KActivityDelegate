@@ -269,7 +269,9 @@ abstract class FragmentActivityDelegateImpl10 : FragmentActivityDelegate10 {
     abstract fun delegate(): FragmentActivityDelegation
 }
 
-
+/**
+ * Delegated FragmentActivity with the logic for initialize the delegations
+ */
 abstract class DelegatedFragmentActivity: FragmentActivity(), DelegatedActivityInterface<FragmentActivity> {
     override var onCreateCallback: () -> Unit = {}
 
@@ -341,11 +343,17 @@ abstract class DelegatedFragmentActivity: FragmentActivity(), DelegatedActivityI
         onActivityReenterDelegate(resultCode, data)
     }
 
+    /**
+     * Calls the [onCreateCallback] method for execute the user logic in the onCreate method
+     */
     override fun setContentView(@LayoutRes layoutId: Int) {
         super.setContentView(layoutId)
         onCreateCallback()
     }
 
+    /**
+     * helper method for use this FragmentActivity with data binding
+     */
     override fun <T : ViewDataBinding> setContentViewDataBinding(layoutId: Int): T {
         return DataBindingUtil.setContentView(this, layoutId)
     }

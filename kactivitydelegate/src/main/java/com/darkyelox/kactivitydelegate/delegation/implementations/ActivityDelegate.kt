@@ -269,10 +269,16 @@ abstract class ActivityDelegateImpl10 : ActivityDelegate10 {
 
 }
 
-
+/**
+ * Delegated Activity with the logic for initialize the delegations
+ */
 abstract class DelegatedActivity: Activity(), DelegatedActivityInterface<Activity> {
     override var onCreateCallback: () -> Unit = {}
 
+    /**
+     * This onCreate initialize the delegations and defines a callback, the callback is called when
+     * the view is created.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initialize(this)
@@ -341,11 +347,17 @@ abstract class DelegatedActivity: Activity(), DelegatedActivityInterface<Activit
         onActivityReenterDelegate(resultCode, data)
     }
 
+    /**
+     * Calls the [onCreateCallback] method for execute the user logic in the onCreate method
+     */
     override fun setContentView(@LayoutRes layoutId: Int) {
         super.setContentView(layoutId)
         onCreateCallback()
     }
 
+    /**
+     * helper method for use this Activity with data binding
+     */
     override fun <T : ViewDataBinding> setContentViewDataBinding(layoutId: Int): T {
         return DataBindingUtil.setContentView(this, layoutId)
     }
