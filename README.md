@@ -194,10 +194,7 @@ Any PR are welcome, any suggestion are wellcome, this is a simple library for An
 Hi i'm Diego, entuciast Android and Web developer, if you want to contact me you can through
 <style>
 .social-icon{
-    display: inline-block;
-    width:48px; 
-    height:48px;
-    margin-left: 15px;
+    
 }
 
 .social-icon-wrapper {
@@ -209,15 +206,25 @@ Hi i'm Diego, entuciast Android and Web developer, if you want to contact me you
 }
 </style>
 <a href="https://www.linkedin.com/in/novashen/">
-<div class="social-icon" style="background-color: #0077B5;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+<div class="social-icon" style="display: inline-block;
+    width:48px; 
+    height:48px;
+    margin-left: 15px;background-color: #0077B5;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
 </a>
 <a href="https://www.facebook.com/dmurillovalencia">
-<div class="social-icon" style="background-color: #3B5998;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+<div class="social-icon" style="display: inline-block;
+    width:48px; 
+    height:48px;
+    margin-left: 15px;background-color: #3B5998;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
 </a>
 
 <a href="mailto:dfmv124@gmail.com">
-<div class="social-icon-wrapper" style="display: inline-block; width:48px; height:45px; background: white no-repeat fixed center center;border-radius:10px;">
-    <div class="social-icon" style="background-color: #D14836;-webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
+<div class="social-icon-wrapper" style="margin-left:15px;display: inline-block; width:48px; height:45px; background: white no-repeat fixed center center;border-radius:10px;">
+    <div class="social-icon" style="display: inline-block;
+    width:48px; 
+    height:48px;
+    background-color: #D14836;
+    -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg) no-repeat 50% 50%; mask: url(https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg) no-repeat 50% 50%;"></div>
 </div>
 </a>
 
